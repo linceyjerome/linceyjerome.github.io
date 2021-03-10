@@ -1,0 +1,384 @@
+@font-face{
+	font-family: 'Fira Code', monospace;
+	src: url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    padding:0;
+    margin:0;
+	font-size: calc(1em + 1vw);
+}
+
+/*GENERAL*/
+
+::selection {
+  color: rgba(255,255,255,.99);
+  background: rgba(0,0,0,.99);
+}
+::-moz-selection {
+  color: rgba(255,255,255,.99);
+  background: rgba(0,0,0,.99);
+}
+
+.align-text{
+	width:85%;
+}
+
+.top-bottom-margin{
+	margin-top: 100px;
+}
+
+.float-right{
+	float:right;
+}
+
+/* ------ Backgrounds ------ */
+.website-background-black {
+	background: #000000;
+}
+.website-background-white {
+	background: #ffffff;
+}
+
+/* ------ Colors ------ */
+.text-color-white {
+	color: #ffffff;
+}
+.text-color-purple {
+	color: #9689EB;
+}
+.text-color-black {
+	color: #000000;
+}
+.text-color-gray {
+	color: #888888;
+}
+
+/* ------ Text styles ------ */
+.underline {
+	text-decoration: underline;
+}
+
+.hide-text-block {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+h1 {
+	position: fixed;
+	line-height: 110%;
+	letter-spacing: -2px;
+    font-size: 3.2em;
+    font-size: 18vm;
+    font-size: 18vmin;
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		line-height: 130%;
+	}
+}
+
+h2 {
+	line-height: 140%;
+	font-size: 100px;
+    font-size: 2.222em;
+}
+
+h3 {
+	font-family:'Fira Code';
+	line-height: 120%;
+	font-size: 64px;
+}
+
+h4 {
+	line-height: 140%;
+	font-size: 40px;
+	margin: 4vh 0 4vh 0;
+	font-family:'Fira Code';
+}
+	@media screen and (max-width: 767px) {
+		h4 {
+		font-size: 30px;
+		}
+	}
+
+h5 {
+	font-family:'Fira Code';
+	line-height: 140%;
+	font-size: 36px;
+	font-size: 30px;
+	margin: 12vh 0 5vh 0;
+	margin: 12vh 0 3vh 0;
+}
+
+@media screen and (max-width: 767px) {
+	h5 {
+		font-size: 20px;
+	}
+}
+
+h6 {
+	font-family: "Fira Code";
+	line-height: 140%;
+	font-size: 24px;
+	margin: 8vh 0 2vh 0;	
+}	
+
+/* ------ paragraph styling ------ */
+
+p {
+	line-height: 170%;
+	font-family:'Fira Code';
+	font-size: 18px;
+	margin-bottom: 3vh;
+}
+
+p.size-small {
+	font-family: 'Fira Code';
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+	p.size-small {
+		font-size: 14px;
+	}
+}
+		
+.size-medium {
+	line-height: 180%;
+	font-size: 20px;
+}
+
+.size-large {
+	line-height: 160%;
+	font-size: 24px;
+	margin-bottom: 4vh;
+}
+
+/* ------ List ------ */
+ul {
+	line-height: 180%;
+	font-family:'Fira Code';
+	font-size: 18px;
+	margin-bottom: 5vh;
+}
+
+li {
+	margin-left: 3vh;
+}
+
+blockquote {
+	line-height: 170%;
+	font-family:'Fira Code';
+	font-size: 18px;
+	color: #666666;
+	margin: 6vmin 0;
+	padding: 10px 20px 10px 30px;
+	border-left:4px solid #dddddd;
+}
+
+/* ------ Links ------ */
+
+.links a{
+	display: block;
+	margin : 4vh 0;
+	font-size: 19px;
+}
+
+a, a:after, a:visited {
+	font-family:'Fira Code';
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;	
+}
+
+a.text-color-white, a.text-color-white:after, a.text-color-white:visited {
+	color: #ffffff;	
+}
+
+a.text-color-purple, a.text-color-purple:after, a.text-color-purple:visited {
+	color: #9689EB;
+}
+
+/* ------ Hover states ------ */
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.on-hover--40:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
+@media screen and (max-width: 767px) {
+	.on-hover-40:hover {
+		margin-left: 0px;	
+	}
+.on-hover--40:hover {
+	margin-left: 0px;
+	}	
+}
+ 
+
+.max-width {
+	max-width: 68%;
+	max-width: 21.5em;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+	.max-width {
+		max-width: 100%;
+		max-width: 86%;
+	}
+}
+
+
+/*	=====================================================================
+									HOMEPAGE							
+	===================================================================== */
+
+
+.vertical-center {
+	position: absolute;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-align-items: center; 
+	align-items:   center;
+}
+
+.label-hello:after{
+    content:"Hello.";
+}
+.label-hello:hover:after{
+	content:"About";
+}
+.label-iam:after{
+    content:"I am";
+}
+.label-iam:hover:after{
+	content:"Work";
+}
+.label-Lincey:after{
+    content:"Lincey";
+}
+.label-Lincey:hover:after{
+	content:"Contact";
+}
+
+.label-name{
+	float:right;
+	position: fixed;
+	width: 50%;
+}
+
+.label-name:after{
+	top: 10%;
+	z-index: 999;
+    font-size: 20px;
+    content: "Lincey.";
+}
+
+
+.label-name:hover:after{
+	content:"Lincey.Jérôme";
+	white-space: nowrap;
+}
+@media screen and (max-width: 767px) {
+	.label-name{
+		top: 5%;
+		left: 75%;
+	}
+	.label-name:hover:after{
+		content:"Lincey";
+		white-space: nowrap;
+	}
+}
+
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+/* ------ Delays ------ */
+.delay02 { -webkit-animation-delay: .2s; animation-delay: .2s;}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+.delay06 { -webkit-animation-delay: .6s; animation-delay: .6s;}
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+.delay10 { -webkit-animation-delay: 1s; animation-delay: 1s;}
+.delay12 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s;}
+
+
+/*HOMEPAGE MOBILE*/
+@media screen and (min-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hide-web {
+		display: none;
+	}
+	.toggle-mobile-second {
+		display: none;
+	}
+	.mobile-tap-area {
+		background: transparent;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.tap-indication {
+	    text-align: center;
+		width: 100%;
+		font-family:"Fira Code";
+		color: #ffffff;
+		position: fixed;
+		bottom: 4%;
+		font-size: 0.6em;
+	    font-size: 3.6vm;
+	    font-size: 3.6vmin;
+		animation: bounce 1s infinite alternate;
+		
+		-webkit-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		-moz-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;	
+	}
+	@keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+	@-webkit-keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+}
