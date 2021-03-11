@@ -10,6 +10,7 @@
   "author": "Lincey Jérôme",
   "license": "ISC",
   "dependencies": {
+    "clipboard": "^2.0.8",
     "serve": "^11.3.2"
   },
   "devDependencies": {

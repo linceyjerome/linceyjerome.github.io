@@ -14,10 +14,7 @@ body {
 }
 
 /* ------ General ------ */
-::selection {
-  color: rgba(255, 255, 255, 0.99);
-  background: rgba(0, 0, 0, 0.99);
-}
+
 ::-moz-selection {
   color: rgba(255, 255, 255, 0.99);
   background: rgba(0, 0, 0, 0.99);
@@ -38,11 +35,6 @@ body {
 .max-width {
   max-width: 21.5em;
   margin: 0 auto;
-}
-
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* ------ Backgrounds ------ */
@@ -66,10 +58,6 @@ body {
 }
 
 /* ------ Text styles ------ */
-.underline {
-  text-decoration: underline;
-}
-
 .hide-text-block {
   position: relative;
   display: block;
@@ -153,11 +141,6 @@ p.size-small {
   p.size-small {
     font-size: 14px;
   }
-}
-
-.size-medium {
-  line-height: 180%;
-  font-size: 20px;
 }
 
 .size-large {
@@ -248,7 +231,7 @@ a.text-color-purple:visited {
   content: 'I am';
 }
 .label-iam:hover:after {
-  content: 'Work';
+  content: 'Projects';
 }
 .label-Lincey:after {
   content: 'Lincey';
@@ -377,5 +360,24 @@ a.text-color-purple:visited {
   .delay08 {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+  }
+}
+
+/* ------ Copy email to clipboard ------ */
+.label-email {
+  cursor: pointer;
+}
+.label-email:after {
+  content: 'lj_jerome@hotmail.com';
+}
+.label-email:hover:after {
+  content: 'Copy to clipboard';
+}
+.label-email:hover:active:after {
+  content: 'Email copied';
+}
+@media screen and (max-width: 767px) {
+  .label-email:hover:after {
+    content: 'Copied to clipboard';
   }
 }
