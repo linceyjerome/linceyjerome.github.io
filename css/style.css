@@ -367,15 +367,19 @@ a.text-color-purple:visited {
 .label-email {
   cursor: pointer;
 }
+
 .label-email:after {
   content: 'lj_jerome@hotmail.com';
 }
+
 .label-email:hover:after {
   content: 'Copy to clipboard';
 }
+
 .label-email:hover:active:after {
   content: 'Email copied';
 }
+
 @media screen and (max-width: 767px) {
   .label-email:hover:after {
     content: 'Copied to clipboard';
