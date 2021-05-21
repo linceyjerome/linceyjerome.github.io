@@ -168,6 +168,9 @@ li {
 .tech-list > li {
   margin-left: 0px;
 }
+.tech-list > li > i {
+  color: #9689eb;
+}
 
 /* ------ Links ------ */
 
