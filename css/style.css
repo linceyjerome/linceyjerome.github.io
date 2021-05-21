@@ -160,6 +160,14 @@ ul {
 li {
   margin-left: 3vh;
 }
+.tech-list {
+  list-style-type: none;
+  padding: 0px;
+  width: 85%;
+}
+.tech-list > li {
+  margin-left: 0px;
+}
 
 /* ------ Links ------ */
 
