@@ -1,4 +1,5 @@
 {
+  "homepage": "https://linceyjerome.github.io",
   "name": "my-personal-site",
   "version": "1.5.0",
   "private": true,
@@ -8,9 +9,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "npx gatsby develop",
-    "start": "npx gatsby develop",
     "build": "npx gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
+    "start": "npx gatsby develop",
     "serve": "npx gatsby serve",
     "clean": "npx gatsby clean",
     "format": "npx prettier --write .",
@@ -49,6 +50,7 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "postcss": "^8.4.5",
     "prettier": "3.5.3",
