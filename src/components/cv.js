@@ -7,6 +7,7 @@ export default function CV() {
       allContentfulCv(
         filter: { description: {} }
         sort: { fields: description, order: DESC }
+        filter: { node_locale: { eq: "en-US" } }
       ) {
         nodes {
           classname

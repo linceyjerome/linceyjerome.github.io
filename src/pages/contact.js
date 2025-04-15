@@ -4,7 +4,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 export default function Contact() {
   const query = graphql`
     {
-      allContentfulContact(sort: { fields: title, order: ASC }) {
+      allContentfulContact(
+        sort: { fields: title, order: ASC }
+        filter: { node_locale: { eq: "en-US" } }
+      ) {
         nodes {
           id
           link
