@@ -38,3 +38,6 @@ dist-ssr
 .env
 
 .cache
+
+# Gatsby build output
+public/
