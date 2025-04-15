@@ -1,20 +1,20 @@
-require("dotenv").config({
+require('dotenv').config({
   path: '.env',
-})
+});
 
 module.exports = {
   siteMetadata: {
     title: `My Personal Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    "gatsby-plugin-image",
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
-        "spaceId":process.env.CONTENTFUL_SPACE_ID
-      }
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+      },
     },
     {
       resolve: `gatsby-plugin-postcss`,
@@ -22,11 +22,11 @@ module.exports = {
         postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
       },
     },
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/LJLogo.png",
+        icon: 'src/images/LJLogo.png',
       },
     },
     {
@@ -36,9 +36,9 @@ module.exports = {
         develop: true,
         tailwind: true,
         purgeCSSOptions: {
-          safelist: ['ul', 'h4', 'li','h6','h2'], // Don't remove this selector
+          safelist: ['ul', 'h4', 'li', 'h6', 'h2'], // Don't remove this selector
         },
       },
-    }
-  ]
+    },
+  ],
 };

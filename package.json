@@ -12,7 +12,11 @@
     "start": "npx gatsby develop",
     "build": "npx gatsby build",
     "serve": "npx gatsby serve",
-    "clean": "npx gatsby clean"
+    "clean": "npx gatsby clean",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
+    "test:watch": "npx jest --watchAll"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -47,6 +51,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.0.0",
     "postcss": "^8.4.5",
+    "prettier": "3.5.3",
     "tailwindcss": "^3.1.3"
   }
 }

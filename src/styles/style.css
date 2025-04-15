@@ -40,7 +40,7 @@ body {
 
 /* ------ Backgrounds ------ */
 .website-background-black {
-  background: dark-blue; 
+  background: dark-blue;
 }
 
 .website-background-white {
@@ -69,7 +69,6 @@ h1 {
   font-size: 18vm;
   font-size: 18vmin;
 }
-
 
 @media screen and (max-width: 767px) {
   .on-hover-40:hover {
@@ -222,7 +221,6 @@ a.text-color-purple:visited {
   margin-left: 40px;
   transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
-
 
 /* ------ Home ------ */
 .vertical-center {

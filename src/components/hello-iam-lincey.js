@@ -1,7 +1,6 @@
-import * as React from "react"
+import * as React from 'react';
 
 export default function IndexMenu() {
-
   return (
     <div className="hide-mobile mobile-tap-area ">
       <div className="max-width">
@@ -21,5 +20,5 @@ export default function IndexMenu() {
       </div>
       <div className="tap-indication">Tap anywhere</div>
     </div>
-  )
+  );
 }
