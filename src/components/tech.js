@@ -5,13 +5,13 @@ export default function Tech() {
 
     const query = graphql`
   {
-    allContentfulTech(sort: {fields: title}) {
+    allContentfulTech(sort: {fields: title} filter: {node_locale: {eq: "en-US"}}) {
         nodes {
             id
           title
           icon
-        }
-      }
+        }  
+    }
   }
 `;
     const data = useStaticQuery(query);

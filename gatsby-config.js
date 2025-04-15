@@ -36,7 +36,7 @@ module.exports = {
         develop: true,
         tailwind: true,
         purgeCSSOptions: {
-          safelist: ['ul', 'h4', 'li'], // Don't remove this selector
+          safelist: ['ul', 'h4', 'li','h6','h2'], // Don't remove this selector
         },
       },
     }

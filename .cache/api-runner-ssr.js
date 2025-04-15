@@ -1,18 +1,18 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('S:/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/mnt/f/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('S:/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('/mnt/f/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('S:/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      plugin: require('/mnt/f/git-repos-github/jijii26.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"icon":"src/images/LJLogo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"ee535f150adba25c116a900d8d2ea59d"},
     },{
       name: 'partytown',
-      plugin: require('S:/git-repos-github/jijii26.github.io/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/mnt/f/git-repos-github/jijii26.github.io/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */
