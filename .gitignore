@@ -35,4 +35,6 @@ dist-ssr
 .yarn-integrity
 
 # dotenv environment variables file
-# .env
+.env
+
+.cache
