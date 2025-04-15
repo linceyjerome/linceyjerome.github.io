@@ -5,9 +5,8 @@ export default function CV() {
   const query = graphql`
     {
       allContentfulCv(
-        filter: { description: {} }
+        filter: { description: {}, node_locale: { eq: "en-US" } }
         sort: { fields: description, order: DESC }
-        filter: { node_locale: { eq: "en-US" } }
       ) {
         nodes {
           classname

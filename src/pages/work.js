@@ -5,7 +5,7 @@ export default function Work() {
   const query = graphql`
     {
       allContentfulWork(
-        filter: { title: {} }
+        filter: { title: {}, node_locale: { eq: "en-US" } }
         sort: { fields: title, order: ASC }
       ) {
         nodes {
